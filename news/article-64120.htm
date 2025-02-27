@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="canonical" href="https://vpnluyouqi.github.io/news/article-64120.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>拼音转换&#8212;Python自然语言处理（6）</title>
+        <meta name="description" content="目录  什么是拼音转换 拼音转换   输出音调 输出声调 输出声母 输出韵母   处理数字拼音    在我们学习语言之前，我们一般会学习拼音来认识汉字，并学会如何读汉字。所以，拼音在对于我们语言的重要" />
+        <link rel="icon" href="/assets/website/img/v2raysubscribe/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN路由器 订阅链接节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnluyouqi.github.io/news/article-64120.htm" />
+    <meta property="og:site_name" content="VPN路由器 订阅链接节点官网" />
+    <meta property="og:title" content="拼音转换&#8212;Python自然语言处理（6）" />
+    <meta property="og:image" content="https://vpnluyouqi.github.io/uploads/20241210/7382cc97a2d858cb91a3c98b7d2e9f9e.webp" />
+        <meta property="og:release_date" content="2025-02-27T05:56:58" />
+    <meta property="og:updated_time" content="2025-02-27T05:56:58" />
+        <meta property="og:description" content="目录  什么是拼音转换 拼音转换   输出音调 输出声调 输出声母 输出韵母   处理数字拼音    在我们学习语言之前，我们一般会学习拼音来认识汉字，并学会如何读汉字。所以，拼音在对于我们语言的重要" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="拼音转换&#8212;Python自然语言处理（6）">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://oss.maxcdn.com">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/bootstrap.min.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/helper.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/style.default.css" id="theme-stylesheet">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/owl.theme.css">
+    <!-- plugins-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/simpletextrotator">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/custom.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY3S6783HH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PY3S6783HH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div id="all">
+            <!-- navbar-->
+    <header class="header">
+        <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                                                <span>VPN路由器</span>
+                                            </a>
+                    <div class="navbar-buttons">
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="pe-7s-menu"></i></button>
+                    </div>
+                </div>
+                <div id="navigation" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                                                <li><a href="/">首页</a></li>
+                                                <li><a href="/free-nodes/">免费节点</a></li>
+                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                <li><a href="/news/">新闻资讯</a></li>
+                                                <li><a href="/client.htm">客户端</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+        <section id="intro" class="text-intro no-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>拼音转换&#8212;Python自然语言处理（6）</h1>
+                        <p class="weight-300">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   *** FEATURES ***-->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                  				  				  				<div id="content_views" class="markdown_views prism-atom-one-dark"> <div class="toc"> <h3>目录</h3> <ul> <li><a href="#_2" rel="nofollow">什么是拼音转换</a></li> <li><a href="#_9" rel="nofollow">拼音转换</a></li> <li> <ul> <li><a href="#_28" rel="nofollow">输出音调</a></li> <li><a href="#_48" rel="nofollow">输出声调</a></li> <li><a href="#_65" rel="nofollow">输出声母</a></li> <li><a href="#_83" rel="nofollow">输出韵母</a></li> </ul> </li> <li><a href="#_101" rel="nofollow">处理数字拼音</a></li> </ul> </div> </h1> <p>在我们学习语言之前，我们一般会学习拼音来认识汉字，并学会如何读汉字。所以，拼音在对于我们语言的重要性不言而喻。</p> <p>而拼音转换指的是将汉字转为拼音的过程。但是，我们中文博大精深，一般来说某个字并不仅仅只有一个读音，比如“翟”，它作为姓氏可以读作zhái，作为其他可读作di。这是就需要结合上下文，或者说结合与其组合的词汇进行转换拼音。不仅如此，拼音还有音调，比如一二三四声表示的意义有时候也是不一样的。</p> <p>本篇博文将介绍字符串到拼音的转换。</p> </h1> <p>首先，HanLP库提供的拼音转换为本位于data/dictionary/pinyin/pinyin.txt文件中。每行分别由=隔开汉字与拼音。其中多音字的拼音数量多余汉字数量。在实际的转换过程中，默认读取多音字的第一个拼音，除非匹配到更长的词语。</p> <p>此外，HanLP库还支持声母，韵母，音调，音标以及输入法首字母与收声母功能。当然，也能给前文的繁体字转换为拼音。</p> <p>下面，我们来看一段代码示例：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     text<span class="token operator">=</span><span class="token string">"重载不是重量"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span></code></pre> <p>运行之后，控制台输出如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/cec549a1ef2140edad3a2d5a3369c03a.jpg" alt="拼音转换---Python自然语言处理（6）"><br /> 可以看到，基本上每个字的拼音都输出了。如果程序判断不出来多音字是哪个声调，会输出其所有的声调。比如这里的体输出了3声和1声，重输出了3声与2声。</p> <blockquote> <p>在python中，我们通过HanLP.convertToPinyinList进行汉字与拼音的转换。</p> </blockquote> <h2><a id="_28" rel="nofollow"></a>输出音调</h2> <p>鉴于我们已经知道了如何转换汉字到拼音，那么我们现在需要实现的是单独获取每个汉字的音调，不需要声调。现在该如何去实现呢？不妨先来看看代码：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"重载不是体重"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"输出音调"</span><span class="token punctuation">)</span><span class="token keyword">for</span> pinyin<span class="token keyword">in</span> pinyin_list<span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%s,"</span><span class="token operator">%</span> pinyin<span class="token punctuation">.</span>getPinyinWithToneMark<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre> <p>如上面代码所示，我们获取了Java的HanLP库中的Pinyin类，这个类可以帮我们处理很多的拼音相关的问题，比如这里的获取音调。</p> <p>运行之后，效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/ecf2bbcc39855da0e25d45af443fa7d4.jpg" alt="拼音转换---Python自然语言处理（6）"></p> <blockquote> <p>需要注意的是，前面博文已经说过了，通过python进行HanLP库使用时，尽量调用Java类进行处理，因为Java类的处理时间比python快很多。这里我们通过Pinyin类的getPinyinWithToneMark()方法获取声调。</p> </blockquote> <h2><a id="_48" rel="nofollow"></a>输出声调</h2> <p>既然可以只输出音调，那么肯定也可以单独输出声调。具体代码如下：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"重载不是体重"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"输出声调"</span><span class="token punctuation">)</span><span class="token keyword">for</span> pinyin<span class="token keyword">in</span> pinyin_list<span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%s,"</span><span class="token operator">%</span> pinyin<span class="token punctuation">.</span>getTone<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre> <p>运行之后，效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/316d6fb5e061097a1ece5d8adc0a0b73.jpg" alt="拼音转换---Python自然语言处理（6）"></p> <blockquote> <p>这里我们通过Pinyin类的getTone()方法获取声调。</p> </blockquote> <h2><a id="_65" rel="nofollow"></a>输出声母</h2> <p>同样的，我们还可以输出声母。代码如下：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"重载不是体重"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\r\n输出声母"</span><span class="token punctuation">)</span><span class="token keyword">for</span> pinyin<span class="token keyword">in</span> pinyin_list<span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%s,"</span><span class="token operator">%</span> pinyin<span class="token punctuation">.</span>getShengmu<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre> <p>运行之后，效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/1407340c39abfecbfd3c77ea2358f180.jpg" alt="拼音转换---Python自然语言处理（6）"></p> <blockquote> <p>这里我们用getShengmu()方法输出声母，方法名就是中文意思，很好理解。</p> </blockquote> <h2><a id="_83" rel="nofollow"></a>输出韵母</h2> <p>接着，我们再来输出韵母。代码如下：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"重载不是体重"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\r\n输出韵母"</span><span class="token punctuation">)</span><span class="token keyword">for</span> pinyin<span class="token keyword">in</span> pinyin_list<span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%s,"</span><span class="token operator">%</span> pinyin<span class="token punctuation">.</span>getYunmu<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre> <p>运行之后，效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/2f41a5fd6b4526bca2da20ed2e261f8f.jpg" alt="拼音转换---Python自然语言处理（6）"></p> <blockquote> <p>这里我们用getYunmu()方法输出韵母，方法名就是中文意思，很好理解。</p> </blockquote> </h1> <p>除此之外，上面因为都是汉字，所以大家肯定都很好处理成拼音。但是现在很多时候，中文文本里面并不仅仅只有汉字，也有数字和英文。但是拼音是汉字独有的，那怎么办呢？</p> <p>我们先来看看按上面直接处理带数字与英文时，效果怎么样。代码如下所示：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"我们到2035年就会称为世界第一"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinList<span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span></code></pre> <p>运行之后，效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/405226d42bd7baa000a2eae52ed86c00.jpg" alt="拼音转换---Python自然语言处理（6）"><br /> 可以看到数字都直接替换为none5，也就是缺失的意义。拼音文件找不到与其匹配的汉语拼音。</p> <p>而我们实际在处理中文文档时，都是保留数字与英文的并不直接翻译。其实这里我们想保留其数字的话，HanLP.convertToPinyinString()方法就能实现，我们来看看这个方法的完整定义：</p> <pre><code class="prism language-python">convertToPinyinString<span class="token punctuation">(</span>转换为拼音的字符串文本<span class="token punctuation">,</span>输出间隔符<span class="token punctuation">,</span>布尔类型<span class="token punctuation">)</span></code></pre> <p>相信看了上面方法的读者应该很快就知道了，第3个布尔类型就是转换数字与保留数字的关键参数，这里我们再来变换代码：</p> <pre><code class="prism language-python"><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     Pinyin<span class="token operator">=</span> JClass<span class="token punctuation">(</span><span class="token string">"com.hankcs.hanlp.dictionary.py.Pinyin"</span><span class="token punctuation">)</span>     text<span class="token operator">=</span><span class="token string">"我们到2035年就会称为世界第一"</span>     pinyin_list<span class="token operator">=</span> HanLP<span class="token punctuation">.</span>convertToPinyinString<span class="token punctuation">(</span>text<span class="token punctuation">,</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>pinyin_list<span class="token punctuation">)</span></code></pre> <p>运行之后，我们的英文与数字就会原封不动的保留下来。效果如下：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220905/da4a41a8a303ee08cbbfcd1b58edd098.jpg" alt="拼音转换---Python自然语言处理（6）"></p> </div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-63501.htm">宠物领养协议书范本定期回访怎么写啊图片（宠物领养协议是否有法律效力）</a></p>
+                                        <p>下一个：<a href="/news/article-64122.htm">中国最大宠物食品公司（中国最大宠物食品公司在哪里）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-2-12-free-subscribe-node.htm" title="VPN路由器 | 2月12日19.1M/S|免费VPN/Clash/V2ray/SSR/Shadowrocket免费节点链接地址">VPN路由器 | 2月12日19.1M/S|免费VPN/Clash/V2ray/SSR/Shadowrocket免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/news/article-58255.htm" title="马云做的预制菜是什么意思">马云做的预制菜是什么意思</a></li>
+                        <li class="py-2"><a href="/news/article-57119.htm" title="宠福鑫动物医院电话云岗（宠福康宠物医院）">宠福鑫动物医院电话云岗（宠福康宠物医院）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-11-free-v2ray-subscribe.htm" title="VPN路由器 | 2月11日19.5M/S|免费VPN/Clash/Shadowrocket/V2ray/SSR免费节点链接地址">VPN路由器 | 2月11日19.5M/S|免费VPN/Clash/Shadowrocket/V2ray/SSR免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-16-node-share.htm" title="VPN路由器 | 2月16日22M/S|免费VPN/V2ray/SSR/Clash/Shadowrocket免费节点链接地址">VPN路由器 | 2月16日22M/S|免费VPN/V2ray/SSR/Clash/Shadowrocket免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/news/article-64120.htm" title="拼音转换&#8212;Python自然语言处理（6）">拼音转换&#8212;Python自然语言处理（6）</a></li>
+                        <li class="py-2"><a href="/news/article-60546.htm" title="记一次RabbitMQ连接阻塞，全部队列不消费异常">记一次RabbitMQ连接阻塞，全部队列不消费异常</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-17-free-v2ray.htm" title="VPN路由器 | 2月17日19.1M/S|免费VPN/V2ray/SSR/Clash/Shadowrocket免费节点链接地址">VPN路由器 | 2月17日19.1M/S|免费VPN/V2ray/SSR/Clash/Shadowrocket免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/news/article-59963.htm" title="无货源网店赚钱吗?（无货源网店赚钱吗）">无货源网店赚钱吗?（无货源网店赚钱吗）</a></li>
+                        <li class="py-2"><a href="/news/article-59964.htm" title="宠物医院好评怎么写简短一点（宠物医院好评怎么写简短一点的话）">宠物医院好评怎么写简短一点（宠物医院好评怎么写简短一点的话）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">51</span> <a href="/date/2025-02/" title="2025-02 归档">2025-02</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+                <footer class="footer">
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                            <p>&copy;2025 Best company</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="credit pull-right">
+                                <a href="/">VPN路由器 订阅链接节点官网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Javascript files-->
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/bootstrap.min.js"> </script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.cookie.js"> </script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/ekko-lightbox.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.simple-text-rotator.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.scrollTo.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/owl.carousel.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/front.js"></script>
+        <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+        <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+</body>
+
+</html>
