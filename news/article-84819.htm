@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="canonical" href="https://vpnluyouqi.github.io/news/article-84819.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JAVA时间戳类Instant</title>
+        <meta name="description" content="前言 在JAVA8之前的版本，去获取时间戳（毫秒级别）常用的办法有两种 //&nbsp;方法一：构建日期Date类然后调用getTime方法 Date&nbsp;date&nbsp;=&nbsp;ne" />
+        <link rel="icon" href="/assets/website/img/v2raysubscribe/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN路由器 订阅链接节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnluyouqi.github.io/news/article-84819.htm" />
+    <meta property="og:site_name" content="VPN路由器 订阅链接节点官网" />
+    <meta property="og:title" content="JAVA时间戳类Instant" />
+    <meta property="og:image" content="https://vpnluyouqi.github.io/uploads/20241210/6e11f7f57f20340ae4a1af340dad7851.webp" />
+        <meta property="og:release_date" content="2025-03-30T09:35:47" />
+    <meta property="og:updated_time" content="2025-03-30T09:35:47" />
+        <meta property="og:description" content="前言 在JAVA8之前的版本，去获取时间戳（毫秒级别）常用的办法有两种 //&nbsp;方法一：构建日期Date类然后调用getTime方法 Date&nbsp;date&nbsp;=&nbsp;ne" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="JAVA时间戳类Instant">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://oss.maxcdn.com">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/bootstrap.min.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/helper.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/style.default.css" id="theme-stylesheet">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/owl.theme.css">
+    <!-- plugins-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/simpletextrotator">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/assets/website/css/v2raysubscribe/custom.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY3S6783HH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PY3S6783HH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <div id="all">
+            <!-- navbar-->
+    <header class="header">
+        <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                                                <span>VPN路由器</span>
+                                            </a>
+                    <div class="navbar-buttons">
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="pe-7s-menu"></i></button>
+                    </div>
+                </div>
+                <div id="navigation" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                                                <li><a href="/">首页</a></li>
+                                                <li><a href="/free-nodes/">免费节点</a></li>
+                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                <li><a href="/news/">新闻资讯</a></li>
+                                                <li><a href="/client.htm">客户端</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+        <section id="intro" class="text-intro no-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>JAVA时间戳类Instant</h1>
+                        <p class="weight-300">
+                            <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   *** FEATURES ***-->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                  				  				  				<div id="content_views" class="markdown_views prism-atom-one-dark"> </h1> <h2><a id="_3" rel="nofollow"></a>前言</h2> <p>在JAVA8之前的版本，去获取时间戳（毫秒级别）常用的办法有两种</p> <pre><code>//&nbsp;方法一：构建日期Date类然后调用getTime方法 Date&nbsp;date&nbsp;=&nbsp;new&nbsp;Date(); System.out.println(date.getTime());  //&nbsp;方法二：使用System类静态方法获取 System.out.println(System.currentTimeMillis());</code></pre> <p>由于Date类大部分方法已经废弃，而且上面两种方法的时间戳只能精确到毫秒级别，所以我们有必要了解下jdk1.8推出的Instant类，该类可以将时间戳精确到<strong>纳秒</strong>级别。</p> <h2><a id="Instant_20" rel="nofollow"></a>Instant类</h2> <h3><a id="_23" rel="nofollow"></a>时间点</h3> <p>该类对象表示的是时间线上的一点，这个时间点存在标准的UTC时间，注意<strong>这个时间并不是指北京时间或东京时间而是指世界时间</strong>。</p> <pre><code>//&nbsp;获取当前时间&nbsp;2022-09-26T03:12:58.517Z（比当地时间相差8个小时） System.out.println(Instant.now());  //&nbsp;获取系统默认时间戳&nbsp;2022-09-26T11:12:58.517+08:00[Asia/Shanghai] System.out.println(Instant.now().atZone(ZoneId.systemDefault()));</code></pre> <p>在Instant时间线上存在三个重要的点位，最大点、最小点、原点也就是说小于1970-01-01的时间戳就为负数，超过1970-01-01的时间戳就为正数</p> <pre><code>//&nbsp;时间线上最大点&nbsp;&nbsp;+1000000000-12-31T23:59:59.999999999Z System.out.println(Instant.MAX);  //&nbsp;时间线上最小点&nbsp;&nbsp;-1000000000-01-01T00:00:00Z System.out.println(Instant.MIN);  //&nbsp;时间线上原点&nbsp;&nbsp;&nbsp;1970-01-01T00:00:00Z System.out.println(Instant.EPOCH);  //&nbsp;输出结果为-8369623 System.out.println(Instant.parse("1969-09-26T03:06:17.323Z").getEpochSecond());</code></pre> <h3><a id="_53" rel="nofollow"></a>时间表示</h3> <p>在Instant中采用两个字段表示时间戳</p> <pre><code>/** &nbsp;*&nbsp;The&nbsp;number&nbsp;of&nbsp;seconds&nbsp;from&nbsp;the&nbsp;epoch&nbsp;of&nbsp;1970-01-01T00:00:00Z. &nbsp;*&nbsp;该字段表示Instant时间距离原点1970-01-01T00:00:00Z的时间（单位秒） &nbsp;*/ private&nbsp;final&nbsp;long&nbsp;seconds; /** &nbsp;*&nbsp;The&nbsp;number&nbsp;of&nbsp;nanoseconds,&nbsp;later&nbsp;along&nbsp;the&nbsp;time-line,&nbsp;from&nbsp;the&nbsp;seconds&nbsp;field. &nbsp;*&nbsp;This&nbsp;is&nbsp;always&nbsp;positive,&nbsp;and&nbsp;never&nbsp;exceeds&nbsp;999,999,999. &nbsp;*&nbsp;该字段表示Instant当前时间的纳秒数这个值不会超过999,999,999，因为1秒=1000_000_000纳秒 &nbsp;*/ private&nbsp;final&nbsp;int&nbsp;nanos;</code></pre> <h3><a id="Instant_72" rel="nofollow"></a>Instant实例化</h3> <p>普通实例化分为如下几种</p> <pre><code>//&nbsp;获取当前时间 Instant&nbsp;instant1&nbsp;=&nbsp;Instant.now();  //&nbsp;字符串转Instant Instant&nbsp;instant2&nbsp;=&nbsp;Instant.parse("2022-09-26T03:46:24.373Z");  //&nbsp;构建秒级Instant对象，从时间1970-01-01T00:00:00Z开始计算(距离原点5000秒) //&nbsp;结果为：1970-01-01T01:23:20Z Instant&nbsp;instant3&nbsp;=&nbsp;Instant.ofEpochSecond(5000);  //&nbsp;构建毫秒级Instant对象，同样从时间1970-01-01T00:00:00Z开始计算(距离原点5000毫秒) //&nbsp;结果为：1970-01-01T00:00:05Z Instant&nbsp;instant4&nbsp;=&nbsp;Instant.ofEpochMilli(5000);</code></pre> <p>还有一种特殊的如下，可以构建纳秒级的Instant对象</p> <pre><code>//&nbsp;构建纳秒级Instant对象，同样从时间1970-01-01T00:00:00Z开始计算 //&nbsp;参数：epochSecond（秒）,nanoAdjustment(纳秒) //&nbsp;结果为：1970-01-01T00:00:05.000001111Z Instant&nbsp;instant5&nbsp;=&nbsp;Instant.ofEpochSecond(5,&nbsp;1111);</code></pre> <p>不过我们需要注意Instant.ofEpochSecond方法的源码，如下</p> <pre><code>static&nbsp;final&nbsp;long&nbsp;NANOS_PER_SECOND&nbsp;=&nbsp;1000_000_000L; /** &nbsp;*&nbsp;@param&nbsp;epochSecond&nbsp;&nbsp;秒从1970-01-01T00:00:00Z开始计算 &nbsp;*&nbsp;@param&nbsp;nanoAdjustment&nbsp;&nbsp;纳秒 &nbsp;*/ public&nbsp;static&nbsp;Instant&nbsp;ofEpochSecond(long&nbsp;epochSecond,&nbsp;long&nbsp;nanoAdjustment)&nbsp;{ &nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Math.floorDiv是除法运算，返回小于或等于商的整数&nbsp;Math.floorDiv(25,&nbsp;3)=8 &nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Math.addExact加法运算，Math.addExact(1,&nbsp;2)=3 &nbsp;&nbsp;&nbsp;&nbsp;long&nbsp;secs&nbsp;=&nbsp;Math.addExact(epochSecond,&nbsp;Math.floorDiv(nanoAdjustment,&nbsp;NANOS_PER_SECOND)); &nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Math.floorMod是模运算，Math.floorMod(9,&nbsp;20)=9 &nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;nos&nbsp;=&nbsp;(int)Math.floorMod(nanoAdjustment,&nbsp;NANOS_PER_SECOND); &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;create(secs,&nbsp;nos); }</code></pre> <h3><a id="Instant_122" rel="nofollow"></a>Instant获取参数</h3> <pre><code>Instant&nbsp;instant&nbsp;=&nbsp;Instant.now(); //&nbsp;时区相差8小时&nbsp;2022-09-26T07:04:19.110Z System.out.println(instant);  System.out.println("秒："+instant.getEpochSecond());  System.out.println("毫秒："+instant.toEpochMilli()); //&nbsp;1毫秒&nbsp;=&nbsp;1000&nbsp;000&nbsp;纳秒 System.out.println("纳秒："+instant.getNano());</code></pre> <h3><a id="Instant_137" rel="nofollow"></a>Instant时间点比较</h3> <p>由于时间点位于时间线上，所以可以直接进行对比。</p> <pre><code>Instant&nbsp;instant1&nbsp;=&nbsp;Instant.parse("2022-09-26T07:04:19.110Z"); Instant&nbsp;instant2&nbsp;=&nbsp;Instant.parse("2022-09-26T07:04:19.110Z"); Instant&nbsp;instant3&nbsp;=&nbsp;Instant.parse("2022-08-26T07:04:19.110Z");  //&nbsp;相等为0 System.out.println(instant1.compareTo(instant2)); //&nbsp;instant1大于instant3&nbsp;为1 System.out.println(instant1.compareTo(instant3)); //&nbsp;instant1小于instant3&nbsp;为-1 System.out.println(instant3.compareTo(instant1));  //&nbsp;true System.out.println(instant1.isAfter(instant3)); //&nbsp;false System.out.println(instant1.isBefore(instant3));</code></pre> <h3><a id="Instant_160" rel="nofollow"></a>Instant时间点运算</h3> <pre><code>Instant&nbsp;instant1&nbsp;=&nbsp;Instant.parse("2022-09-26T07:04:19.110Z");  //&nbsp;在instant1的基础上增加2秒，值为：2022-09-26T07:04:21.110Z System.out.println(instant1.plusSeconds(2));  //&nbsp;在instant1的基础上增加1毫秒，值为：2022-09-26T07:04:19.111Z System.out.println(instant1.plusMillis(1));  //&nbsp;在instant1的基础上增加1001纳秒，值为：2022-09-26T07:04:19.110001001Z System.out.println(instant1.plusNanos(1001));  //&nbsp;在instant1的基础上增加1秒，值为：2022-09-26T07:04:20.110Z //&nbsp;该值取决于后面指定的单位，可以从ChronoUnit枚举类获取 System.out.println(instant1.plus(1,&nbsp;ChronoUnit.SECONDS));  //&nbsp;在instant1的基础上减去1秒，值为：2022-09-26T07:04:18.110Z //&nbsp;plus是增加，minus是减少，逻辑类似可以参考上面plus相关A System.out.println(instant1.minusSeconds(1));</code></pre> <p><strong>Instant时间点计算时需要注意，无论是调用plus或者minus相关API都会重新创建新对象。</strong></p> </div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-84094.htm">延吉延农动物医院好吗知乎 延吉延农动物医院好吗知乎</a></p>
+                                        <p>下一个：<a href="/news/article-84820.htm">动物医院诊疗系统有哪些设备（动物医院诊疗程序）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-84094.htm" title="延吉延农动物医院好吗知乎 延吉延农动物医院好吗知乎">延吉延农动物医院好吗知乎 延吉延农动物医院好吗知乎</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-24-free-subscribe-node.htm" title="VPN路由器 | 2月24日20M/S|免费VPN/Shadowrocket/V2ray/Clash/SSR免费节点链接地址">VPN路由器 | 2月24日20M/S|免费VPN/Shadowrocket/V2ray/Clash/SSR免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-21-free-high-speed-nodes.htm" title="VPN路由器 | 3月21日20.4M/S|免费VPN/Shadowrocket/SSR/Clash/V2ray免费节点链接地址">VPN路由器 | 3月21日20.4M/S|免费VPN/Shadowrocket/SSR/Clash/V2ray免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-19-free-node-subscribe-links.htm" title="VPN路由器 | 2月19日18.6M/S|免费VPN/Clash/SSR/Shadowrocket/V2ray免费节点链接地址">VPN路由器 | 2月19日18.6M/S|免费VPN/Clash/SSR/Shadowrocket/V2ray免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-5-free-v2ray.htm" title="VPN路由器 | 3月5日21.8M/S|免费VPN/Shadowrocket/V2ray/Clash/SSR免费节点链接地址">VPN路由器 | 3月5日21.8M/S|免费VPN/Shadowrocket/V2ray/Clash/SSR免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/news/article-65350.htm" title="Java基础之浅谈继承、多态">Java基础之浅谈继承、多态</a></li>
+                        <li class="py-2"><a href="/news/article-57685.htm" title="正规兽药厂家名单 正规兽药厂家名单公布">正规兽药厂家名单 正规兽药厂家名单公布</a></li>
+                        <li class="py-2"><a href="/news/article-79897.htm" title="vue3.0中对mapState,mapGetters封装">vue3.0中对mapState,mapGetters封装</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-11-free-node-subscribe.htm" title="VPN路由器 | 3月11日19.5M/S|免费VPN/V2ray/Clash/SSR/Shadowrocket免费节点链接地址">VPN路由器 | 3月11日19.5M/S|免费VPN/V2ray/Clash/SSR/Shadowrocket免费节点链接地址</a></li>
+                        <li class="py-2"><a href="/news/article-83396.htm" title="宠物之家app的项目背景（宠物之家app的项目背景是什么）">宠物之家app的项目背景（宠物之家app的项目背景是什么）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">90</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">54</span> <a href="/date/2025-02/" title="2025-02 归档">2025-02</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+                <footer class="footer">
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                            <p>&copy;2025 Best company</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="credit pull-right">
+                                <a href="/">VPN路由器 订阅链接节点官网</a> 版权所有 Powered by WordPress
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Javascript files-->
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/bootstrap.min.js"> </script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.cookie.js"> </script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/ekko-lightbox.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.simple-text-rotator.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/jquery.scrollTo.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/owl.carousel.min.js"></script>
+        <script src="/assets/website/js/frontend/v2raysubscribe/front.js"></script>
+        <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+        <script src="/assets/website/js/frontend/G.js"></script>
+    </div>
+</body>
+
+</html>
