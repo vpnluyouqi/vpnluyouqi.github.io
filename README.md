@@ -1,4 +1,4 @@
-# VPN路由器 | 4月19日20.9M/S|免费VPN/V2ray/SSR/Shadowrocket/Clash免费节点链接地址  更新时间 2025-04-19 09:15:52
+# VPN路由器 | 4月23日19M/S|免费VPN/Shadowrocket/V2ray/SSR/Clash免费节点链接地址  更新时间 2025-04-23 09:05:46
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnluyouqi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnluyouqi.github.io/uploads/2025/04/0-20250419.yaml
-- https://vpnluyouqi.github.io/uploads/2025/04/1-20250419.yaml
-- https://vpnluyouqi.github.io/uploads/2025/04/2-20250419.yaml
-- https://vpnluyouqi.github.io/uploads/2025/04/3-20250419.yaml
-- https://vpnluyouqi.github.io/uploads/2025/04/4-20250419.yaml
+- https://vpnluyouqi.github.io/uploads/2025/04/0-20250423.yaml
+- https://vpnluyouqi.github.io/uploads/2025/04/1-20250423.yaml
+- https://vpnluyouqi.github.io/uploads/2025/04/2-20250423.yaml
+- https://vpnluyouqi.github.io/uploads/2025/04/3-20250423.yaml
+- https://vpnluyouqi.github.io/uploads/2025/04/4-20250423.yaml
 
 ### V2ray订阅链接
 
-- https://vpnluyouqi.github.io/uploads/2025/04/0-20250419.txt
-- https://vpnluyouqi.github.io/uploads/2025/04/1-20250419.txt
-- https://vpnluyouqi.github.io/uploads/2025/04/2-20250419.txt
-- https://vpnluyouqi.github.io/uploads/2025/04/3-20250419.txt
-- https://vpnluyouqi.github.io/uploads/2025/04/4-20250419.txt
+- https://vpnluyouqi.github.io/uploads/2025/04/0-20250423.txt
+- https://vpnluyouqi.github.io/uploads/2025/04/1-20250423.txt
+- https://vpnluyouqi.github.io/uploads/2025/04/2-20250423.txt
+- https://vpnluyouqi.github.io/uploads/2025/04/3-20250423.txt
+- https://vpnluyouqi.github.io/uploads/2025/04/4-20250423.txt
 
 ### Sing-box订阅链接
 
-- https://vpnluyouqi.github.io/uploads/2025/04/20250419.json
+- https://vpnluyouqi.github.io/uploads/2025/04/20250423.json
 
 ## 更多clash节点订阅 ：
 
